@@ -2,10 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
-import BlogSlider from './components/Blog';
-import CounterUp from './components/CounterUp';
+import BlogSlider from '../components/Blog';
+import CounterUp from '../components/CounterUp';
+import Test from '../components/Test';
+import { useEffect } from 'react';
+import { gsap } from 'gsap'
+
 
 export default function Home() {
+  useEffect(() => {
+    gsap.to("#logo", { rotation: 360, x: 10, yPercent: 50 });
+    
+  }, [])
+  
   return (
     <>
       {/* banner  */}
@@ -13,7 +22,7 @@ export default function Home() {
         <div className="container mt-120">
           <div className="row">
             <div className="col-lg-6 col-sm-12 block-img-we-do">
-              <img className="bdrd-rb-300 img-responsive" src="assets/imgs/page/homepage3/img-2.png" alt="Agon" />
+              <img id="logo" className="bdrd-rb-300 img-responsive" src="assets/imgs/page/homepage3/img-2.png" alt="Agon" />
             </div>
             <div className="col-lg-6 col-sm-12 block-we-do">
               <h3 className="text-heading-1 mt-30">
@@ -64,9 +73,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Training Slider*/}
-      <section className="section-box overflow-visible">
+  {/* Training Slider*/}
+  {/* <section className="section-box overflow-visible">
         <div className="container gray-black-background pt-100">
           <div className="row">
             <div className="col-lg-11 mx-auto">
@@ -79,12 +87,12 @@ export default function Home() {
                     </h4>
                     <p className="text-body-text-1 color-gray-500">
                       We have over 400 + trained Merchandisers across all seven Emirates, who are on top of RMS Merchandising process. Our up-to-date and efficient training programs enables our
-                    </p>
+                    </p> */}
                     {/* <div className="">
                       <Link href="#" className="btn btn-black icon-arrow-right-white">Get Start</Link>
                       <Link href="#" className="btn btn-link icon-arrow-right color-gray-900 text-heading-6">Learn More</Link>
                     </div> */}
-                  </div>
+                  {/* </div>
                   <div className="col-lg-6 col-md-5  text-end black-light-background  bdrd-right-40 pt-lg-4 pb-lg-4 pt-sm-3 pb-sm-3">
                     <img className="img-responsive bdrd-lb-200" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
                   </div>
@@ -93,9 +101,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+         </div>
+      </section> */} 
 
+      <Test/>
       {/* best Merchandising Services Slider*/}
       <section className="section-box ">
         <div className="container gray-dark-background bdrd-bottom-40 ">

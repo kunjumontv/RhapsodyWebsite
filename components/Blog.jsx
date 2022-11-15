@@ -5,7 +5,8 @@ import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Autoplay, Navigation]);
-const BlogSlider = () => {
+
+const Blog = () => {
 
     const data = [
         {
@@ -31,10 +32,10 @@ const BlogSlider = () => {
                         slidesPerView={1}
                         spaceBetween={30}
                         loop={true}
-                        // autoplay={{
-                        //     delay: 2500,
-                        //     disableOnInteraction: false
-                        // }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false
+                        }}
                         navigation={{
                             prevEl: ".swiper-button-prev-5",
                             nextEl: ".swiper-button-next-5",
@@ -79,9 +80,9 @@ const BlogSlider = () => {
                     </Swiper>
                 </div>
 
-                {/* <div className="swiper-button-prev swiper-button-prev-5" />
+                <div className="swiper-button-prev swiper-button-prev-5" />
 
-                <div className="swiper-button-next swiper-button-next-5" /> */}
+                <div className="swiper-button-next swiper-button-next-5" />
 
 
             </div>
@@ -91,5 +92,5 @@ const BlogSlider = () => {
     );
 };
 
-export default BlogSlider;
+export default Blog;
 
