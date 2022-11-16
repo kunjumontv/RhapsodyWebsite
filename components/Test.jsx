@@ -50,7 +50,7 @@ const Test = () => {
                                         {data.map((item, i) => (
                                             <>
                                                 <SwiperSlide className="col-lg-6 col-md-7 white-background pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5 bdrd-left-40 ">
-                                                    <h4 className="text-heading-2 mb-10 mt-10 mb-30">
+                                                    <h4 className="text-heading-1-1 mb-10 mt-10 mb-30">
                                                         {item.title}
                                                     </h4>
                                                     <p className="text-body-text-1 color-gray-500">

@@ -6,15 +6,13 @@ import BlogSlider from '../components/Blog';
 import CounterUp from '../components/CounterUp';
 import Test from '../components/Test';
 import { useEffect } from 'react';
-import { gsap } from 'gsap'
+import { gsap } from 'gsap';
+import { FaClock } from 'react-icons/fa';
 
 
 export default function Home() {
-  useEffect(() => {
-    gsap.to("#logo", { rotation: 360, x: 10, yPercent: 50 });
-    
-  }, [])
-  
+
+
   return (
     <>
       {/* banner  */}
@@ -73,8 +71,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-  {/* Training Slider*/}
-  {/* <section className="section-box overflow-visible">
+      {/* Training Slider*/}
+      {/* <section className="section-box overflow-visible">
         <div className="container gray-black-background pt-100">
           <div className="row">
             <div className="col-lg-11 mx-auto">
@@ -88,11 +86,11 @@ export default function Home() {
                     <p className="text-body-text-1 color-gray-500">
                       We have over 400 + trained Merchandisers across all seven Emirates, who are on top of RMS Merchandising process. Our up-to-date and efficient training programs enables our
                     </p> */}
-                    {/* <div className="">
+      {/* <div className="">
                       <Link href="#" className="btn btn-black icon-arrow-right-white">Get Start</Link>
                       <Link href="#" className="btn btn-link icon-arrow-right color-gray-900 text-heading-6">Learn More</Link>
                     </div> */}
-                  {/* </div>
+      {/* </div>
                   <div className="col-lg-6 col-md-5  text-end black-light-background  bdrd-right-40 pt-lg-4 pb-lg-4 pt-sm-3 pb-sm-3">
                     <img className="img-responsive bdrd-lb-200" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
                   </div>
@@ -102,9 +100,11 @@ export default function Home() {
             </div>
           </div>
          </div>
-      </section> */} 
+      </section> */}
 
-      <Test/>
+      <Test />
+
+
       {/* best Merchandising Services Slider*/}
       <section className="section-box ">
         <div className="container gray-dark-background bdrd-bottom-40 ">
@@ -153,21 +153,18 @@ export default function Home() {
       {/* Quoto */}
       <section className="section-box overflow-visible mb-100 ">
         <div className="container mt-100 black-light-background pt-75 pb-75 pr-75 pl-75 bdrd-40">
-          <div className="row">
-            <div className="col-lg-11 mx-auto">
-              <div className=" box-newsletter position-relative">
-                <div className="row">
-                  <div className="col-lg-12 col-md-12">
-                    <p className="text-heading-quoto">
-                      In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.
-                    </p>
-
-                  </div>
-                </div>
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <div className="card-square hover-up mb-20">
+              <p className="text-heading-quoto color-white text-comment">&quot;No matter where you go, It&apos;s is the coolest, most happening thing around! Not able to tell you how happy I am with it. &quot;</p>
+              <div className="box-img-user">
+                <div className="img-user img-user-round"><img src="/assets/imgs/page/homepage2/user-1.png" alt="Agon" /></div>
+                <h4 className="text-body-lead color-white mb-5">Jane Cooper</h4>
+                <p className="text-body-text-md color-white">Biffco Enterprises Ltd.</p>
               </div>
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Clients */}
@@ -197,48 +194,59 @@ export default function Home() {
       </section >
 
       {/* Blogs  */}
-      <section className="section-box gray-light-background bdrd-top-40 ">
+      <section className="section-box gray-light-background bdrd-top-40 pt-80 ">
         <div className="container mt-30">
           <div className="row">
-            <div className="col-lg-12 col-sm-12 col-12 text-center">
-              <h2 className="text-heading-1 color-gray-900 mb-10">Recent Blogs</h2>
+            <div className="col-lg-12 col-sm-12 col-12 text-start">
+              <h2 className="text-heading-1-1 color-gray-900 mb-10">Recent Blogs</h2>
             </div>
           </div>
         </div>
         <div className="container mt-90">
           <div className="row">
             <div className="col-lg-4 col-sm-12 pr-30 mb-50">
-              <div className="card-grid-style-4"><span className="tag-dot">Company</span>
-                <Link href="#" className="text-heading-4">We can blend colors multiple ways, the most common</Link>
-
+              <div className="card-grid-style-4">
                 <div className="grid-4-img">
                   <Link href="#"><img src="/assets/imgs/page/homepage1/img-news-1.png" alt="Agon" /></Link>
                 </div>
+                <span className="color-green-900 fw-bold"> <FaClock /> &nbsp; Sep 27, 2022</span>
+                <Link href="#" className="text-heading-4">We can blend colors multiple ways, the most common</Link>
+                <p className="text-body-text color-gray-500 text-desc-fix-h pr-70">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper
+                  sed pharetra senectus donec nunc. Consequat semper viverra nam libero justo
+                  laoreet facilisis magna etiam.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-12 pr-30 mb-50">
-              <div className="card-grid-style-4"><span className="tag-dot">Marketing Event</span>
-                <Link href="#" className="text-heading-4">How To Blow Through Capital At An Incredible Rate
-                </Link>
-
+              <div className="card-grid-style-4">
                 <div className="grid-4-img">
-                  <Link href="#"><img src="/assets/imgs/page/homepage1/img-news-2.png" alt="Agon" />
-                  </Link>
+                  <Link href="#"><img src="/assets/imgs/page/homepage1/img-news-1.png" alt="Agon" /></Link>
                 </div>
+                <span className="color-green-900 fw-bold"> <FaClock /> &nbsp; Sep 27, 2022</span>
+                <Link href="#" className="text-heading-4">We can blend colors multiple ways, the most common</Link>
+                <p className="text-body-text color-gray-500 text-desc-fix-h pr-70">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper
+                  sed pharetra senectus donec nunc. Consequat semper viverra nam libero justo
+                  laoreet facilisis magna etiam.
+                </p>
               </div>
             </div>
             <div className="col-lg-4 col-sm-12 pr-30 mb-50">
-              <div className="card-grid-style-4"><span className="tag-dot">Customer Services</span>
-                <Link href="#" className="text-heading-4">Design Studios That Everyone Should Know About?
-                </Link>
-
-                <div className="grid-4-img color-bg-4">
-
-                  <Link href="#"><img src="/assets/imgs/page/homepage1/img-news-3.png" alt="Agon" />
-                  </Link>
+              <div className="card-grid-style-4">
+                <div className="grid-4-img">
+                  <Link href="#"><img src="/assets/imgs/page/homepage1/img-news-1.png" alt="Agon" /></Link>
                 </div>
+                <span className="color-green-900 fw-bold"> <FaClock /> &nbsp; Sep 27, 2022</span>
+                <Link href="#" className="text-heading-4">We can blend colors multiple ways, the most common</Link>
+                <p className="text-body-text color-gray-500 text-desc-fix-h pr-70">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper
+                  sed pharetra senectus donec nunc. Consequat semper viverra nam libero justo
+                  laoreet facilisis magna etiam.
+                </p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
