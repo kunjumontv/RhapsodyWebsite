@@ -32233,7 +32233,8 @@ input.qty-val {
 }
 
 .gray-black-background {
-    background: linear-gradient(180deg, #F1F0EC 50%, #E7E7E7 50%);
+    /* background: linear-gradient(180deg, #F1F0EC 50%, #E7E7E7 50%); */
+    background-color: #F1F0EC;
 }
 
 .icon-shape {
@@ -32307,3 +32308,6 @@ input.qty-val {
     color: #FFFFFF;
 
 }
+.swiper-wrapper {
+    transition-timing-function: linear;
+ }

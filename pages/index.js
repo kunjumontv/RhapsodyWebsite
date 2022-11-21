@@ -1,15 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+// import Head from 'next/head'
+// import Image from 'next/image'
+// import styles from '../styles/Home.module.css'
 import Link from "next/link";
 import CounterUp from '../components/CounterUp';
-import Test from '../components/Blog';
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
 import { FaClock } from 'react-icons/fa';
+import Blog from '../components/Blog';
+import ClientSlider from '../components/ClientSlider';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 export default function Home() {
+  
 
 
   return (
@@ -57,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="section-box ">
+      <section className="section-box">
         <div className="container gray-light-background pt-100 pb-80">
           <div className="row">
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
@@ -70,39 +72,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Training Slider*/}
-      {/* <section className="section-box overflow-visible">
-        <div className="container gray-black-background pt-100">
-          <div className="row">
-            <div className="col-lg-11 mx-auto">
-              <div className="box-newsletter position-relative">
-                <div className="row">
-                  <div className="col-lg-6 col-md-7 white-background pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5 bdrd-left-40">
 
-                    <h4 className="text-heading-2 mb-10 mt-10 mb-30">
-                      Training
-                    </h4>
-                    <p className="text-body-text-1 color-gray-500">
-                      We have over 400 + trained Merchandisers across all seven Emirates, who are on top of RMS Merchandising process. Our up-to-date and efficient training programs enables our
-                    </p> */}
-      {/* <div className="">
-                      <Link href="#" className="btn btn-black icon-arrow-right-white">Get Start</Link>
-                      <Link href="#" className="btn btn-link icon-arrow-right color-gray-900 text-heading-6">Learn More</Link>
-                    </div> */}
-      {/* </div>
-                  <div className="col-lg-6 col-md-5  text-end black-light-background  bdrd-right-40 pt-lg-4 pb-lg-4 pt-sm-3 pb-sm-3">
-                    <img className="img-responsive bdrd-lb-200" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-                  </div>
 
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
-      </section> */}
 
-  
-      <Blog/>
+      <Blog />
+
       {/* Counters */}
       <div className="section-box mt-100">
         <div className="container">
@@ -156,32 +130,17 @@ export default function Home() {
 
       </section>
 
-    <ClientSlider/>
+
       {/* Clients */}
       <section className="section-box overflow-visible mb-100">
         <div className="container">
           <div className="row justify-content-md-center">
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-1.svg" /></Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-2.svg" /></Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-3.svg" /></Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-4.svg" /></Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-5.svg" /></Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-2 col-2 text-center">
-              <Link href="#" className="item-logo"><img alt="Agon" src="assets/imgs/slider/logo/sample-logo-6.svg" /></Link>
-            </div>
+            <ClientSlider />
           </div>
         </div>
       </section >
+
+      {/* <TestSlider/> */}
 
       {/* Blogs  */}
       <section className="section-box gray-light-background bdrd-top-40 pt-80 ">

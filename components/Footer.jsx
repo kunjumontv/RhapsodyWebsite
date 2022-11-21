@@ -82,9 +82,9 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-2 col-12 mt-30">
                             <h4 className="text-heading-6-footer">Join Newsletter</h4>
-                            <div class="box-form-newsletter mt-30">
-                                <form class="form-newsletter">
-                                    <input class="input-sub mb-30" placeholder="Your email id .." />
+                            <div className="box-form-newsletter mt-30">
+                                <form className="form-newsletter">
+                                    <input className="input-sub mb-30" placeholder="Your email id .." />
                                     <div className="block-signin">
                                         <Link href="/page-signup" className="btn-1 btn-default hover-up">Subscribe</Link>
                                     </div>
