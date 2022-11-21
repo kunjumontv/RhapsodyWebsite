@@ -14,16 +14,13 @@ const NavBar = ({ handleOpen, headerStyle }) => {
     return <>
         <header className={scroll ? `${headerStyle} header sticky-bar stick ` : `${headerStyle} header sticky-bar`}>
             <div className="container">
-            
+
                 <div className="main-header">
-                
+
                     <div className="header-left">
                         <div className="header-logo">
                             <Link href="/" className="d-flex">
-
                                 {headerStyle ? <img alt="Agon" src="/assets/imgs/template/logo-white.svg" /> : <img alt="Agon" src="/assets/imgs/template/logo.svg" />}
-
-
                             </Link>
                         </div>
                         <div className="header-nav">
@@ -51,14 +48,15 @@ const NavBar = ({ handleOpen, headerStyle }) => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="header-right">
                         <div className="block-signin">
                             <Link href="/page-signup" className="btn-1 btn-default hover-up">Get Started</Link>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </header>
 
