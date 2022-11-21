@@ -2,12 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
-import BlogSlider from '../components/Blog';
 import CounterUp from '../components/CounterUp';
-import Test from '../components/Test';
+import Test from '../components/Blog';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { FaClock } from 'react-icons/fa';
+
 
 export default function Home() {
 
@@ -101,26 +101,8 @@ export default function Home() {
          </div>
       </section> */}
 
-      <Test />
-
-
-      {/* best Merchandising Services Slider*/}
-      <section className="section-box ">
-        <div className="container gray-dark-background bdrd-bottom-40 ">
-          <div className="row">
-            <div className="col-lg-1 col-sm-1 col-12" />
-            <div className="col-lg-10 col-sm-10">
-              <h4 className="text-heading-2 mb-50 pt-100">
-                Vertical Slider
-              </h4>
-              <BlogSlider />
-            </div>
-            <div className="col-lg-1 col-sm-1 col-12 " />
-          </div>
-        </div>
-
-      </section>
-
+  
+      <Blog/>
       {/* Counters */}
       <div className="section-box mt-100">
         <div className="container">
@@ -174,6 +156,7 @@ export default function Home() {
 
       </section>
 
+    <ClientSlider/>
       {/* Clients */}
       <section className="section-box overflow-visible mb-100">
         <div className="container">
