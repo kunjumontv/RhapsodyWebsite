@@ -6,18 +6,27 @@ import CounterUp from '../components/CounterUp';
 import { FaClock } from 'react-icons/fa';
 import Blog from '../components/Blog';
 import ClientSlider from '../components/ClientSlider';
-// import { gsap } from 'gsap';
+import { gsap } from 'gsap';
+import { useLayoutEffect, useRef } from "react";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 export default function Home() {
   
+  const root = useRef();
 
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(root.current, { x: -100,duration:1.5 });
+    }, root);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
       {/* banner  */}
-      <section className="section-box">
+      <section  ref={root} className="section-box">
         <div className="container mt-120">
           <div className="row">
             <div className="col-lg-6 d-none d-lg-block">
@@ -131,7 +140,7 @@ export default function Home() {
       </section>
 
 
-      {/* Clients */}
+      
       <section className="section-box overflow-visible mb-100">
         <div className="container">
           <div className="row justify-content-md-center">

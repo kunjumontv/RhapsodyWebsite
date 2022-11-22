@@ -50,8 +50,8 @@ const Blog = () => {
                                         className="row"
                                     >
                                         {data.map((item) => (
-                                            <div key={item.id}>
-                                                <SwiperSlide key={item.id+10} className="col-lg-6 col-md-7 white-background pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5 bdrd-left-40 ">
+                                            <div key= {(Math.random() * 100)}>
+                                                <SwiperSlide key={(Math.random() * 100)} className="col-lg-6 col-md-7 white-background pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5 bdrd-left-40 ">
                                                     <h4 className="text-heading-2 mb-10 mt-10 mb-30">
                                                         {item.title}
                                                     </h4>
@@ -60,7 +60,7 @@ const Blog = () => {
                                                     </p>
                                                 </SwiperSlide>
 
-                                                <SwiperSlide key={item.id+15} className="col-lg-6 col-md-5  text-end black-light-background  bdrd-right-40 pt-lg-4 pb-lg-4 pt-sm-3 pb-sm-3 ">
+                                                <SwiperSlide key={(Math.random() * 100)} className="col-lg-6 col-md-5  text-end black-light-background  bdrd-right-40 pt-lg-4 pb-lg-4 pt-sm-3 pb-sm-3 ">
                                                     <img className="img-responsive bdrd-lb-200" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
                                                 </SwiperSlide>
                                             </div>
