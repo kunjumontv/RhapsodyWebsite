@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
@@ -7,8 +7,9 @@ import { FreeMode } from "swiper";
 SwiperCore.use([Autoplay, Navigation]);
 const ClientSlider = () => {
 
-
-    const data = [
+    const [data, setData] = useState([]);
+    useEffect(() => {
+      setData([
         {
             id: 1,
             img: "9.jpg",
@@ -39,7 +40,7 @@ const ClientSlider = () => {
             img: "9.jpg",
             src: "assets/imgs/slider/logo/sample-logo-1.svg"
         },
-    ];
+    ])}, [])
 
     return (
 
@@ -52,7 +53,6 @@ const ClientSlider = () => {
                             <div className="slider-news">
                                 <div className="swiper-container">
                                     <Swiper
-                                        // slidesPerView={4}
                                         breakpoints={{
                                             120: {
                                                 slidesPerView: 2,
@@ -75,9 +75,9 @@ const ClientSlider = () => {
                                         className="row"
                                     >
                                         {data.map((item) => (
-                                            <div key={item.id} className="swiper-wrapper">
+                                            <div  key={(Math.random() * 100)} className="swiper-wrapper">
 
-                                                <SwiperSlide key={item.id + 15} className="col-lg-6 col-md-6 col-12 ">
+                                                <SwiperSlide key={item.id} className="col-lg-6 col-md-6 col-12 ">
                                                     <img className="img-responsive" src={item.src} alt="Agon" />
                                                 </SwiperSlide>
                                             </div>
