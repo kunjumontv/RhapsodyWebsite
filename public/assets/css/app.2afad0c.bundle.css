@@ -1011,7 +1011,7 @@ progress {
     .container-sm {
         max-width: 540px
     }
-    
+
 }
 
 @media (min-width:768px) {
@@ -2786,14 +2786,16 @@ progress {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
-    .quoto-padding{
+
+    .quoto-padding {
         padding: 40px;
     }
-    .text-heading-1-1{
+
+    .text-heading-1-1 {
         font-size: 22px !important;
         line-height: 24px !important;
     }
-   
+
 }
 
 @media (max-width:767.98px) {
@@ -4717,6 +4719,7 @@ fieldset:disabled .btn {
     .dropdown-menu-sm-start {
         --bs-position: start
     }
+
     .quoto-padding {
         padding: 100px;
     }
@@ -7140,10 +7143,11 @@ fieldset:disabled .btn {
         border: 0;
         border-radius: 0
     }
+
     .box-img-user {
-        
+
         margin-top: 50px !important;
-        
+
     }
 
     /* .box-img-user .img-user {
@@ -15409,7 +15413,7 @@ span[class*="fi-rr-"]:before {
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: 50%;
+    top: 100%;
     width: calc(44px/ 44 * 27);
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: 44px;
@@ -21875,6 +21879,42 @@ a {
     color: #909090;
 }
 
+.text-body-tiny-2 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #909090;
+}
+
+.text-body-tiny-3 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #909090;
+}
+
+.text-body-tiny-5 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 90px;
+    color: #333333;
+}
+
+.text-body-tiny-4 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 54px;
+    color: #222222;
+}
+
 .text-body-lead-large {
     font-family: "Karla", sans-serif;
     font-weight: 400;
@@ -22029,11 +22069,10 @@ a {
 }
 
 .text-heading-6 {
-    font-family: "Chivo", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0%
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
 }
 
 .text-heading-6-footer {
@@ -27696,7 +27735,8 @@ label {
 .mt-100 {
     margin-top: 100px !important
 }
-.special-margin{
+
+.special-margin {
     margin-top: 100px !important;
 }
 
@@ -28326,6 +28366,7 @@ label {
     border-radius: 40px;
 }
 
+
 .bdrd-right-40 {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -28350,8 +28391,20 @@ label {
     border-bottom-right-radius: 300px;
 }
 
+.bdrd-rb-140 {
+    border-bottom-right-radius: 140px;
+}
+
+.bdrd-lb-140 {
+    border-bottom-left-radius: 140px;
+}
+
 .bdrd-lb-200 {
     border-bottom-left-radius: 200px;
+}
+
+.bdrd-lb-300 {
+    border-bottom-left-radius: 300px;
 }
 
 .bdrd-58 {
@@ -29932,7 +29985,7 @@ label {
 
 .swiper-button-next-5 {
     left: auto;
-    right: 0px;
+    right: 43%;
     background: url("../imgs/slider/swiper/arrowRight.svg") no-repeat center;
     height: 65px;
     width: 65px;
@@ -29946,7 +29999,7 @@ label {
 
 .swiper-button-prev-5 {
     right: auto;
-    left: 0px;
+    left: 43%;
     background: url("../imgs/slider/swiper/arrowLeft.svg") no-repeat center;
     height: 65px;
     width: 65px;
@@ -32155,37 +32208,48 @@ input.qty-val {
     .pt-100 {
         padding-top: 20px !important;
     }
-    .mt-80{
+
+    .mt-80 {
         margin-top: 20px !important;
     }
-    .pb-80{
+
+    .pb-80 {
         padding-bottom: 20px !important;
     }
+
     .mt-100 {
         margin-top: 50px !important;
     }
-    .pt-80{
+
+    .pt-80 {
         padding-top: 0 !important;
     }
-    .mt-90{
+
+    .mt-90 {
         margin-top: 30px !important;
     }
-    .pr-30{
+
+    .pr-30 {
         padding-right: 12px !important;
     }
-    .mb-50{
+
+    .mb-50 {
         margin-bottom: 10px !important;
     }
-    .pr-70{
+
+    .pr-70 {
         padding-right: 0 !important;
     }
-    .mb-40{
+
+    .mb-40 {
         margin-bottom: 0 !important;
     }
+
     .mb-60 {
         margin-bottom: 0 !important;
     }
-    .special-margin{
+
+    .special-margin {
         margin-top: 0 !important;
     }
 }
@@ -32308,6 +32372,25 @@ input.qty-val {
     color: #FFFFFF;
 
 }
+
 .swiper-wrapper {
     transition-timing-function: linear;
- }
+}
+
+.img-responsive-about {
+    max-width: 75%;
+    height: auto;
+}
+
+.service-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.square {
+    vertical-align: middle;
+    margin-right: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: #EB6C4B;
+    border-radius: 0px 0px 10px 0px;
+}
