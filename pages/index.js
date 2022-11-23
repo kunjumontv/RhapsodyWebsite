@@ -215,8 +215,6 @@ export default function Home() {
         </div>
       </section >
 
-      {/* <TestSlider/> */}
-
       {/* Blogs  */}
       <section className="section-box gray-light-background bdrd-top-40 pt-80 ">
         <div className="container mt-30">
