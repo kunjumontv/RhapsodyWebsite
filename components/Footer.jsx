@@ -15,7 +15,7 @@ const Footer = () => {
 
                     <div className="row">
                         <div className="col-lg-3 col-12  ">
-                            <img alt="Agon" src="/assets/imgs/template/logo.svg" />
+                            <img alt="Agon" src="/assets/imgs/Logo.png" />
                             <div className="mt-20 text-body-text-5 0 mb-20 mr-50">
                                 For merchandising to be successful it must have the element of
                                 effectiveness and to provide a finished products

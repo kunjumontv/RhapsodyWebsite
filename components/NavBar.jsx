@@ -20,7 +20,7 @@ const NavBar = ({ handleOpen, headerStyle }) => {
                     <div className="header-left">
                         <div className="header-logo">
                             <Link href="/" className="d-flex">
-                                {headerStyle ? <img alt="Agon" src="/assets/imgs/template/logo-white.svg" /> : <img alt="Agon" src="/assets/imgs/template/logo.svg" />}
+                                {headerStyle ? <img alt="Agon" src="/assets/imgs/Logo-Black.png" /> : <img alt="Agon" src="/assets/imgs/Logo-Black.png" />}
                             </Link>
                         </div>
                         <div className="header-nav">

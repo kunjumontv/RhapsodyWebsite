@@ -10,11 +10,11 @@ const portfolio = () => {
   return (
     <>
       {/* banner  */}
-      <section className="section-box">
+      <section className="section-box mb-145">
         <div className="container mt-120">
           <div className="row">
 
-            <div className="col-lg-6 col-sm-12 block-we-do text-center text-lg-start">
+            <div className="col-lg-6 col-sm-12 text-center text-lg-start pt-80">
               <p className="text-body-tiny-2">Working alongside great brands</p>
               <h3 className="text-heading-1 text-center text-lg-start">
                 We’re committed to doing something <span className="color-green-900">extraordinary</span> every
@@ -28,12 +28,42 @@ const portfolio = () => {
           </div>
         </div>
         <div className="row text-center">
-          <div className="col-12 text-body-tiny-4">
+          <div className="col-12 text-body-tiny-4 mt-80">
             <p className="">Scroll for more</p>
             <FaArrowDown className="color-green-900" />
           </div>
         </div>
       </section>
+
+      <section className="section-big gray-dark-background bdrd-top-40 pb-100 pt-100">
+        <div className="container">
+        <div className="row">
+            <div className="col-lg-12 col-sm-12">
+              <h3 className="text-heading-1">Merchandising Services</h3>
+              <p className="text-body-lead color-gray-600 mt-35 mb-35">
+                Our merchandising team provides customized merchandising services for retail execution solutions. </p>
+            </div>
+          </div>
+          <div className="row">
+
+          
+            <div className="col-lg-6 col-md-5 pr-40">
+              <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
+            </div>
+
+            <div className="col-lg-6 col-md-5 pl-40 ">
+              <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
+            </div>
+
+
+          </div>
+
+          
+        </div>
+      </section>
+
+
+
 
 
       {/* Our Experience */}
@@ -64,65 +94,11 @@ const portfolio = () => {
         </div>
       </section>
 
-
-      <section className="section-box ">
-        <div className="container gray-dark-background pt-100 pb-100">
-          <div className="row">
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-            <div className="col-lg-10 col-sm-12 col-12 block-we-do  white-background bdrd-40 pt-100 pb-100">
-              <div className="row mt-50 block-we-do">
-
-            
-            <div className="col-lg-6 col-md-6 pr-40">
-              <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-            </div>
-
-            <div className="col-lg-6 col-md-6 pl-40 ">
-              <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-            </div>
-           
-
-          </div>
-            </div>
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-
-
-          </div>
-        </div>
-      </section >
-
       <section className="section-box">
-        <div className="container gray-light-background pt-100 pb-80 mt-100 ">
+        <div className="container gray-light-background pt-100 pb-80 ">
           <div className="row">
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
             <div className="col-lg-10 col-sm-10 block-we-do">
-              <h3 className="text-heading-1 mt-10">Merchandising <br></br>Services</h3>
-              <p className="text-body-lead color-gray-600 mt-80">
-                Our merchandising team provides customized merchandising services for retail execution solutions. </p>
-            </div>
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-          </div>
-          <div className="row mt-50 block-we-do">
-
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-            <div className="col-lg-5 col-md-5 pr-40">
-              <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-            </div>
-
-            <div className="col-lg-5 col-md-5 pl-40 ">
-              <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-            </div>
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-
-          </div>
-        </div>
-      </section>
-      <section className="section-box">
-        <div className="container pt-100 pb-80 mt-100 ">
-          <div className="row">
-            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-            <div className="col-lg-10 col-sm-10 block-we-do">
-
               <p className="text-body-lead color-gray-600 mt-80">
                 Our merchandising team provides customized merchandising services for retail execution solutions. </p>
             </div>
@@ -144,60 +120,58 @@ const portfolio = () => {
         </div>
       </section>
 
-      <section className="section-box ">
-        <div className="container gray-dark-background pt-100 pb-100">
+      <section className="section-box">
+        <div className="container gray-light-background pt-100 pb-80 ">
           <div className="row">
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-            <div className="col-lg-10 col-sm-12 col-12 block-we-do  white-background bdrd-40 pt-100 pb-100">
-              <div className="row mt-50 block-we-do">
+            <div className="col-lg-10 col-sm-10 block-we-do">
+              <p className="text-body-lead color-gray-600 mt-80">
+                Our merchandising team provides customized merchandising services for retail execution solutions. </p>
+            </div>
+            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
+          </div>
+          <div className="row mt-50 block-we-do">
 
-            
-            <div className="col-lg-6 col-md-6 pr-40">
+            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
+            <div className="col-lg-5 col-md-5 pr-40">
               <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
             </div>
 
-            <div className="col-lg-6 col-md-6 pl-40 ">
+            <div className="col-lg-5 col-md-5 pl-40 ">
               <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
             </div>
-           
-
-          </div>
-            </div>
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-
 
           </div>
         </div>
-      </section >
+      </section>
 
-      <section className="section-box ">
-        <div className="container gray-dark-background pt-100 pb-100">
+
+      <section className="section-box">
+        <div className="container gray-light-background pt-100 pb-80 ">
           <div className="row">
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-            <div className="col-lg-10 col-sm-12 col-12 block-we-do  white-background bdrd-40 pt-100 pb-100">
-              <div className="row mt-50 block-we-do">
+            <div className="col-lg-10 col-sm-10 block-we-do">
+              <p className="text-body-lead color-gray-600 mt-80">
+                Our merchandising team provides customized merchandising services for retail execution solutions. </p>
+            </div>
+            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
+          </div>
+          <div className="row mt-50 block-we-do">
 
-            
-            <div className="col-lg-6 col-md-6 pr-40">
+            <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
+            <div className="col-lg-5 col-md-5 pr-40">
               <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
             </div>
 
-            <div className="col-lg-6 col-md-6 pl-40 ">
+            <div className="col-lg-5 col-md-5 pl-40 ">
               <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
-            </div>
-           
-
-          </div>
             </div>
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
 
-
           </div>
         </div>
-      </section >
-
-
-
+      </section>
 
 
     </>

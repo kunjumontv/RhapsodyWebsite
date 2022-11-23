@@ -2859,7 +2859,7 @@ progress {
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    /* padding: .375rem .75rem; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -21703,6 +21703,12 @@ li.hr span {
     width: 100%
 }
 
+.section-big {
+    /* float: left; */
+    width: 94%;
+    margin: 0 auto;
+}
+
 .f-right {
     float: right
 }
@@ -21828,6 +21834,16 @@ a {
     line-height: 42px;
     letter-spacing: -0.02em;
     color: #525252;
+}
+
+.text-body-text-2 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: #525252;
+    padding-right: 50px;
 }
 
 .text-body-quote {
@@ -21992,6 +22008,26 @@ a {
     /* or 129% */
     letter-spacing: -0.045em;
     color: #222222;
+}
+
+.text-heading-form {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 66px;
+    /* or 129% */
+    letter-spacing: -0.045em;
+    color: #222222;
+}
+
+.text-body-form {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    color: #505050;
 }
 
 .text-heading-1-1 {
@@ -23230,7 +23266,7 @@ textarea:-ms-input-placeholder {
     height: 60px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-right: 30px;
     font-size: 14px;
     line-height: 20px;
@@ -23296,22 +23332,22 @@ textarea.form-control.form-icons {
 }
 
 .form-group input {
-    background: #fff;
-    border: 0px;
+    background: transparent;
+    border-bottom: 1px solid #505050;
     height: 60px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 14px;
-    line-height: 20px;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    font-size: 34px;
+    line-height: 66px;
     width: 100%;
-    border-radius: 0px
+    /* border-radius: 0px */
 }
 
 .form-group input:focus {
-    background: #fff;
-    border-color: #1D2939
+    background: transparent;
+    border-color: none;
 }
 
 .form-group input.form-icons {
@@ -29989,8 +30025,8 @@ label {
     background: url("../imgs/slider/swiper/arrowRight.svg") no-repeat center;
     height: 65px;
     width: 65px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+    /* -webkit-transform: translateY(-50%); */
+    /* transform: translateY(-50%) */
 }
 
 .swiper-button-next-5::after {
@@ -30003,8 +30039,8 @@ label {
     background: url("../imgs/slider/swiper/arrowLeft.svg") no-repeat center;
     height: 65px;
     width: 65px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+    /* -webkit-transform: translateY(-50%); */
+    /* transform: translateY(-50%) */
 }
 
 .swiper-button-prev-5::after {
@@ -32385,10 +32421,11 @@ input.qty-val {
 .service-icon {
     vertical-align: middle;
     margin-right: 20px;
+    float: left;
 }
 
 .square {
-    vertical-align: middle;
+    vertical-align: text-bottom;
     margin-right: 20px;
     padding: 0px 10px 0px 10px;
     background-color: #EB6C4B;

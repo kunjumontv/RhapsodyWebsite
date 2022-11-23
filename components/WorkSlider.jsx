@@ -27,11 +27,11 @@ const WorkSlider = () => {
     return (
 
 
-        <section className="section-box overflow-visible">
-            <div className="container pb-100">
+        <section className="section-box ">
+            <div className="container pb-100 mb-100">
                 <div className="row">
-                    <div className="col-lg-11 mx-auto">
-                        <div className="box-newsletter position-relative">
+                    <div className="col-lg-12">
+                        <div className=" position-relative">
                             <div className="slider-news">
                                 <div className="swiper-container swiper-group-2">
                                     <Swiper
@@ -51,15 +51,15 @@ const WorkSlider = () => {
                                     >
                                         {data.map((item) => (
                                             <div key={item.id}>
-                                                <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
-                                                <SwiperSlide key={item.id + 10} className="col-lg-5 col-md-5 pr-40">
+                                                {/* <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" /> */}
+                                                <SwiperSlide key={item.id + 10} className="col-lg-6 col-md-6 pr-40">
                                                     <img className="img-responsive bdrd-rb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
                                                 </SwiperSlide>
 
-                                                <SwiperSlide key={item.id + 15} className="col-lg-5 col-md-5 pl-40">
+                                                <SwiperSlide key={item.id + 15} className="col-lg-6 col-md-6 pl-40">
                                                     <img className="img-responsive bdrd-lb-140" src="assets/imgs/template/img-newsletter.png" alt="Agon" />
                                                 </SwiperSlide>
-                                                <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
+                                                {/* <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" /> */}
                                             </div>
                                         ))}
 
