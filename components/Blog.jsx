@@ -25,12 +25,7 @@ const Blog = () => {
     ];
 
     return (
-
-
-        <section className="section-box overflow-visible">
-            <div className="container gray-black-background pt-100">
-                <div className="row">
-                    <div className="col-lg-11 mx-auto">
+<div className="col-lg-11 mx-auto">
                         <div className="box-newsletter position-relative">
                             <div className="slider-news">
                                 <div className="swiper-container swiper-group-2">
@@ -76,9 +71,6 @@ const Blog = () => {
 
                     </div>
 
-                </div>
-            </div>
-        </section>
     )
 }
 

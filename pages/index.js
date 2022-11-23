@@ -6,27 +6,85 @@ import CounterUp from '../components/CounterUp';
 import { FaClock } from 'react-icons/fa';
 import Blog from '../components/Blog';
 import ClientSlider from '../components/ClientSlider';
-import { gsap } from 'gsap';
+import { gsap } from 'gsap/dist/gsap';
 import { useLayoutEffect, useRef } from "react";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 
 
 export default function Home() {
-  
+  gsap.registerPlugin(ScrollTrigger);
+
   const root = useRef();
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(root.current, { x: -100,duration:1.5 });
+      const element = root.current;
+    
+      gsap.fromTo(
+        element.querySelector(".text-heading-1"),
+        {
+          opacity: 0,
+          x: 80,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration:2,
+          immediateRender: false,
+        }
+      );
+      [1,2].forEach(item => {
+        gsap.fromTo(
+          element.querySelector(`#text${item}`),
+          {
+            opacity: 0,
+            y:-100,
+            duration:3
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration:1,
+            scrollTrigger: {
+              trigger: element.querySelector(`#text${item}`),
+              start: "top bottom ",
+              end: "bottom center",
+              scrub: true,
+            },
+          }
+        );
+      });
+      
+      gsap.fromTo(
+        element.querySelectorAll(".scale"),
+        {
+          opacity: 1,
+          scale: 1,
+          y: -20,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1.11,
+          duration: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: element.querySelector(".box-image"),
+            start: "top bottom  ",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
     }, root);
-
     return () => ctx.revert();
   }, []);
 
   return (
-    <>
+    <div ref={root}>
       {/* banner  */}
-      <section  ref={root} className="section-box">
+      <section className="section-box">
         <div className="container mt-120">
           <div className="row">
             <div className="col-lg-6 d-none d-lg-block">
@@ -55,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Image  */}
-      <section className="section-box">
+      <section  className="scale section-box">
         <div className="container mt-100 gray-light-background  bdrd-top-40">
           <div className="row">
             <div className="col-lg-12 mx-auto pl-0 pr-0">
@@ -68,14 +126,14 @@ export default function Home() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="section-box">
+      <section className="scale section-box">
         <div className="container gray-light-background pt-100 pb-80">
           <div className="row">
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
             <div className="col-lg-10 col-sm-10 block-we-do">
-              <h3 className="text-heading-1 mt-10">What Makes Us <br></br> Different</h3>
+              <h3 id="text1" className="fade text-heading-1 mt-10">What Makes Us <br></br> Different</h3>
               <p className="text-body-lead color-gray-600 mt-80">For merchandising to be successful it must have the element of effectiveness and to provide a finished products appearance which boosts the store presentation. Our team members are considered as leaders when it comes to expertise in stores and merchandising.</p>
-              <p className="text-body-lead-large color-gray-600 mt-80">We provide support to our clients by ensuring product placement, positioning and store support services</p>
+              <p id="text2"className="fade text-body-lead-large color-gray-600 mt-80">We provide support to our clients by ensuring product placement, positioning and store support services</p>
             </div>
             <div className="col-lg-1 col-sm-1 col-12 d-none d-lg-block" />
           </div>
@@ -84,7 +142,15 @@ export default function Home() {
 
 
 
-      <Blog />
+
+      <section className="scale section-box overflow-visible">
+            <div className="container gray-black-background pt-100">
+                <div className="row">
+                  <Blog />
+                </div>
+            </div>
+        </section>
+    
 
       {/* Counters */}
       <div className="section-box mt-100">
@@ -208,6 +274,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
