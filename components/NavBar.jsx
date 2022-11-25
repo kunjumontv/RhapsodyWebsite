@@ -33,7 +33,7 @@ const NavBar = ({ handleOpen, headerStyle }) => {
                                         <Link href="#">Services</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Portfolio</Link>
+                                        <Link href="/portfolio">Portfolio</Link>
                                     </li>
                                     <li>
                                         <Link href="#">Contact</Link>

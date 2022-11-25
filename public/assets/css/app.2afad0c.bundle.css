@@ -4737,6 +4737,8 @@ fieldset:disabled .btn {
         right: 0;
         left: auto
     }
+
+    
 }
 
 @media (min-width:768px) {
@@ -7078,6 +7080,7 @@ fieldset:disabled .btn {
         margin: 1.75rem auto
     }
 
+   
     .modal-dialog-scrollable {
         height: calc(100% - 3.5rem)
     }
@@ -9216,6 +9219,9 @@ fieldset:disabled .btn {
 
 .text-center {
     text-align: center !important
+}
+.text-justify {
+    text-align: justify !important
 }
 
 .text-primary {
@@ -21802,8 +21808,9 @@ a {
 }
 
 .img-responsive {
-    max-width: 100%
+    max-width: 100%;    
 }
+
 
 .text-body-lead {
     font-family: 'Karla', sans-serif;
@@ -32417,6 +32424,31 @@ input.qty-val {
     max-width: 75%;
     height: auto;
 }
+
+.portfolio-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-cap-align{
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-cap-width{
+    width: 500px;
+}
+
+.portfolio-sec-width{
+    width: 80vw;
+}
+
+.portfolio-img-responsive{
+
+}
+
+
 
 .service-icon {
     vertical-align: middle;
